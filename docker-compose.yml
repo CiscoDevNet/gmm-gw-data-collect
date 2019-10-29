@@ -1,0 +1,54 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.4.1
+    volumes:
+      - ./config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana-oss:7.4.1
+    volumes:
+      - ./config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+  
+  gmm_stats:
+    image: jockdarock/kinetic_gmm_stats:latest
+    volumes:
+      - ./config/elk7_mappings.json:/config/elk7_mappings.json:ro
+      - ./config/elk6_mappings.json:/config/elk6_mappings.json:ro
+      - ./config/kib_dash.json:/config/kib_dash.json:ro
+    environment:
+      KINETIC_USER_EMAIL: user@email.com
+      KINETIC_USER_PASS: somepass
+      KINETIC_ORG_ID: 0000
+      ELS_HOST: elasticsearch
+      ELS_PORT: 9200
+      KIB_HOST: kibana
+      KIB_PORT: 5601
+      KIB_INDEX_NAME: kinetic_gateway_stats
+      KIB_INDEX_PATTERN_ID: 2a3d56f0-f778-11e9-ae5c-2536d7a4115e
+      TIMEFIELD: updated_at
+      DASHBOARD_ON: "yes"
+      CONFIG_FOLDER: /config
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+      - kibana
+
+networks:
+  elk:
+    driver: bridge

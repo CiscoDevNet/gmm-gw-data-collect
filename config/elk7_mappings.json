@@ -1,0 +1,1227 @@
+{
+    "mappings": {
+        "properties": {
+            "ap_version": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "api_timestamp": {
+                "type": "date"
+            },
+            "app_state": {
+                "properties": {
+                    "reason": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    }
+                }
+            },
+            "autonomous_ap_ip": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "cellular_detail": {
+                "properties": {
+                    "carrier_ip_address": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "carrier_ip_address_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_apn": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_apn_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_connection_type": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_connection_type_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_iccid": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_iccid_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_id": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_id_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_imei": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_imei_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_imsi": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_imsi_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_location": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_location_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_msisdn": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_msisdn_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_network_name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_network_name_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_roaming_status": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_roaming_status_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_rssi": {
+                        "type": "float"
+                    },
+                    "cellular_rssi_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_status": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_status_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_type": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "cellular_type_2": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "created_at": {
+                        "type": "date"
+                    },
+                    "gate_way_id": {
+                        "type": "long"
+                    },
+                    "guid": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "long"
+                    },
+                    "updated_at": {
+                        "type": "date"
+                    }
+                }
+            },
+            "claim_failed_reason": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "claim_state": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "cpu_available": {
+                "type": "long"
+            },
+            "cpu_total": {
+                "type": "long"
+            },
+            "created_at": {
+                "type": "date"
+            },
+            "custom_values": {
+                "properties": {
+                    "allowed_values": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "default_name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "field_type": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "tag_id": {
+                        "type": "long"
+                    },
+                    "value": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    }
+                }
+            },
+            "data_diagnostics": {
+                "type": "boolean"
+            },
+            "discover_things_job_status": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "disk_available": {
+                "type": "long"
+            },
+            "disk_total": {
+                "type": "long"
+            },
+            "emm_operator_password": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "emm_operator_username": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "expansion_module": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "expansion_module_details": {
+                "properties": {
+                    "expansion_module": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "pluggable_base": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "pluggable_expansion": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    }
+                }
+            },
+            "field_director_state": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "fog_director_state": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "gateway_config": {
+                "properties": {
+                    "advanced_wifi_config": {
+                        "type": "boolean"
+                    },
+                    "ap_flexible_template": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "ap_flexible_template_advanced": {
+                        "type": "boolean"
+                    },
+                    "ap_flexible_template_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "ap_flexible_template_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "ap_flexible_template_id": {
+                        "type": "long"
+                    },
+                    "ap_flexible_template_name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "apn": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "apn_current": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "apn_prev_config": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "backup_customer_vpn_pre_shared_key": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "backup_customer_vpn_server_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "broadcast_ssid_enable": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "type": "date"
+                    },
+                    "current_recovery_time": {
+                        "type": "long"
+                    },
+                    "customer_vpn_active_peer_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_pre_shared_key": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_server_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_tunnel_ip_address": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "customer_vpn_tunnel_status": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "desired_recovery_time": {
+                        "type": "long"
+                    },
+                    "dot1x_enabled": {
+                        "type": "boolean"
+                    },
+                    "dual_lte_active_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "dual_lte_active_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "dual_lte_active_load": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "dual_lte_active_subnet": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "dual_lte_active_subnet_address": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "dual_lte_active_subnet_mask": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "flexible_template": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "flexible_template_advanced": {
+                        "type": "boolean"
+                    },
+                    "flexible_template_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "flexible_template_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "flexible_template_id": {
+                        "type": "long"
+                    },
+                    "flexible_template_name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "flexible_template_variables": {
+                        "properties": {
+                            "name": {
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "value": {
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword"
+                                    }
+                                },
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "gate_way_id": {
+                        "type": "long"
+                    },
+                    "gps_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "gps_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "guid": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "long"
+                    },
+                    "ip_connectivity_check_sim_0": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "ip_connectivity_check_sim_1": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "ip_dhcp_helper": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "lan_ports_config": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "lan_ports_connection_states": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "lan_ports_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "lan_ports_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "port_forwarding_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "port_forwarding_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "primary_aaa_server_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "primary_aaa_server_key": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_advanced": {
+                        "type": "boolean"
+                    },
+                    "private_subnet_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_dns_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_exclusion_range_end": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_exclusion_range_start": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_gateway_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "private_subnet_nat": {
+                        "type": "boolean"
+                    },
+                    "private_subnet_netmask": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "retry_count": {
+                        "type": "long"
+                    },
+                    "secondary_apn": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "secondary_apn_current": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "secondary_apn_prev_config": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "unified_ap_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "unified_ap_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "updated_at": {
+                        "type": "date"
+                    },
+                    "vrf_enabled": {
+                        "type": "boolean"
+                    },
+                    "wan_interface_id": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wan_interface_type": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wan_port_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wan_port_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_pre_shared_key": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_ssid": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_status": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_subnet_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wgb_subnet_mask": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wifi_current_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wifi_desired_state": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wifi_pre_shared_key": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wifi_ssid": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wlc_primary_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    },
+                    "wlc_secondary_ip": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    }
+                }
+            },
+            "gateway_profile": {
+                "properties": {
+                    "name": {
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword"
+                            }
+                        },
+                        "type": "text"
+                    }
+                }
+            },
+            "gateway_profile_id": {
+                "type": "long"
+            },
+            "id": {
+                "type": "long"
+            },
+            "internal_ip": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "iox_version": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "last_heard_at": {
+                "type": "date"
+            },
+            "location": {
+                "type": "geo_point"
+            },
+            "location_lat": {
+                "type": "float"
+            },
+            "location_lng": {
+                "type": "float"
+            },
+            "mac_address": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "make": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "memory_available": {
+                "type": "long"
+            },
+            "memory_total": {
+                "type": "long"
+            },
+            "model": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "name": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "num_of_assets": {
+                "type": "long"
+            },
+            "organization_id": {
+                "type": "long"
+            },
+            "pct_status": {
+                "type": "long"
+            },
+            "status": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "sw_version": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "updated_at": {
+                "type": "date"
+            },
+            "uptime": {
+                "type": "float"
+            },
+            "user_app_management_state": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "uuid": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            },
+            "wan_interface": {
+                "fields": {
+                    "keyword": {
+                        "type": "keyword"
+                    }
+                },
+                "type": "text"
+            }
+        }
+    }
+}
