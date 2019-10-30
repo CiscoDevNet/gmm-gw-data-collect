@@ -43,6 +43,7 @@ services:
       TIMEFIELD: updated_at
       DASHBOARD_ON: "yes"
       CONFIG_FOLDER: /config
+      KINETIC_URL: us.ciscokinetic.io
     networks:
       - elk
     depends_on:
