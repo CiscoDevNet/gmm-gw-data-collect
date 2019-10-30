@@ -44,7 +44,7 @@ The easiest way to get this done is to login in to the Kinetic cloud site (https
 
 This application defaults to using us.ciscokinetic.io for API calls for US based users.  However, if you are using Kinetic in europe you will need to edit one more line on your docker-compose.yml file to use this app appropriately.
 
-* On line 46 on the `docker.compose.yml` file change the value to match the correct Kinetic URL.
+* On line 46 on the `docker-compose.yml` file change the value to match the correct Kinetic URL.
 
 From
 
