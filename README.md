@@ -40,6 +40,24 @@ The easiest way to get this done is to login in to the Kinetic cloud site (https
 
 > Optionally: If you are more familiar with Elasticsearch and Kibana and you don't want use the prebuilt dashboard, you can also edit line 44 of the docker-compose.yml file to a value of "no".
 
+### If account is eu.ciscokinetic.io
+
+This application defaults to using us.ciscokinetic.io for API calls for US based users.  However, if you are using Kinetic in europe you will need to edit one more line on your docker-compose.yml file to use this app appropriately.
+
+* On line 46 on the `docker.compose.yml` file change the value to match the correct Kinetic URL.
+
+From
+
+```yaml
+      KINETIC_URL: us.ciscokinetic.io
+```
+
+To
+
+```yaml
+      KINETIC_URL: eu.ciscokinetic.io
+```
+
 * Save your changes to the `docker-compose.yml` file and exit your text editor.
 
 * In your terminal window, issue the following commands to start the application.

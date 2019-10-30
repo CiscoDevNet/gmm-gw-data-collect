@@ -233,8 +233,9 @@ if __name__ == "__main__":
     timefield = os.getenv("TIMEFIELD", "updated_at")
     config_folder = os.getenv("CONFIG_FOLDER", "./config")
     dashboard_on = os.getenv("DASHBOARD_ON", "yes")
-    root_url_v1 = 'us.ciscokinetic.io/api/v1'
-    root_url_v2 = 'us.ciscokinetic.io/api/v2'
+    root_url = os.getenv("KINETIC_URL", "us.ciscokinetic.io")
+    root_url_v1 = '{0}/api/v1'.format(root_url)
+    root_url_v2 = '{0}/api/v2'.format(root_url)
 
     # Elasticsearch settings
     settings = {
